@@ -20,6 +20,7 @@ def avg_rating_by_variety() -> str:
     Os resultados devem ser ordenados pela maior média e conter as colunas:
     ``variety``, ``avg_rating`` e ``total``.
     """
+    
     return """
         SELECT variety, AVG(rating) AS avg_rating, COUNT(*) AS total
         FROM wines
