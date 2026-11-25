@@ -50,7 +50,7 @@ def wines_by_region_climate() -> str:
     """Para cada ``climate`` da tabela ``regions``, conte quantos vinhos existem e a
     média de rating. Faça um ``LEFT JOIN`` de ``regions`` com ``wines`` usando
     ``LIKE`` (wines.region é texto livre, ex: "Mendocino, California")."""
-    # Dica de junção:  ON w.region LIKE '%' || r.region_name || '%'
+
     return """
         SELECT r.climate, COUNT(w.name) AS total_wines, AVG(w.rating) AS avg_rating
         FROM regions r
